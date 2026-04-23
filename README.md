@@ -45,26 +45,26 @@ Each stage is implemented as an independent module, enabling scalability, reusab
 ---
 
 ## Repository Structure
+
 ```mermaid
 graph TD
-    A[ai-multiomics-data-platform-demo] --> B[README.md]
-    A --> C[Dockerfile]
-    A --> D[requirements.txt]
-    A --> E[main.nf]
-    A --> F[deploy_gcp.sh]
-    A --> G[data/]
-    A --> H[output/]
-    A --> I[pipeline/]
+    A["ai-multiomics-data-platform-demo"] --> B["README.md"]
+    A --> C["Dockerfile"]
+    A --> D["requirements.txt"]
+    A --> E["main.nf"]
+    A --> F["deploy_gcp.sh"]
+    A --> G["data/"]
+    A --> H["output/"]
+    A --> I["pipeline/"]
 
-    G --> G1[sample_data.csv]
-    H --> H1[.gitkeep]
+    G --> G1["sample_data.csv"]
+    H --> H1[".gitkeep"]
 
-    I --> I1[ingest.py]
-    I --> I2[process.py]
-    I --> I3[integrate.py]
-    I --> I4[feature_engineering.py]
-    I --> I5[run_pipeline.py]
----
+    I --> I1["ingest.py"]
+    I --> I2["process.py"]
+    I --> I3["integrate.py"]
+    I --> I4["feature_engineering.py"]
+    I --> I5["run_pipeline.py"]
 
 ## How to Run
 
