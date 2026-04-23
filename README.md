@@ -45,7 +45,6 @@ Each stage is implemented as an independent module, enabling scalability, reusab
 ---
 
 ## Repository Structure
-
 ```mermaid
 graph TD
     A["ai-multiomics-data-platform-demo"] --> B["README.md"]
