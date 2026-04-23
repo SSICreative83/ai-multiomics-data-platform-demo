@@ -18,7 +18,6 @@ It simulates how real-world life sciences data platforms reduce “data mechanic
 - Cloud-deployable architecture (GCP-ready)  
 - Workflow orchestration using Nextflow (demo)  
 ---
-
 ## Architecture
 
 The pipeline is designed as a modular system:
