@@ -42,7 +42,7 @@ Each stage is implemented as an independent module, enabling scalability, reusab
 
 ---
 
-## Repository Structure
+## Repository Structure (Visual)
 
 ```mermaid
 graph TD
