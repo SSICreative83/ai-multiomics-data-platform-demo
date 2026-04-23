@@ -1,123 +1,121 @@
-# ai-multiomics-data-platform-demo
-AI-ready multi-omics data pipeline demo for bioinformatics workflows
-
-# AI-Ready Multi-Omics Data Platform Demo
-
-This project demonstrates a simplified data platform for processing multi-omics data and preparing it for AI/ML applications.
-
-## Key Features
-
-- Modular data pipeline (ingestion → processing → integration → feature engineering)
-- AI-ready structured data output
-- Docker-ready execution
-- Cloud-deployable (GCP-ready)
-- Workflow orchestration (Nextflow)
-
-## Tech Stack
-
-- Python
-- Docker
-- Nextflow (demo)
-- Cloud-ready architecture
-
-# AI-Ready Multi-Omics Data Platform Demo
-
-## Overview
+AI-Ready Multi-Omics Data Platform Demo
+Overview
 
 This project demonstrates a simplified, modular data platform for processing multi-omics data and transforming it into structured, AI-ready datasets.
 
 It simulates how real-world life sciences data platforms reduce “data mechanics” and enable scalable, reproducible workflows for downstream AI/ML applications.
 
----
-
-## Key Capabilities
-
-- End-to-end data pipeline:
-  ingestion → cleaning → integration → feature engineering
-- Modular and reusable pipeline components
-- AI/ML-ready structured data output
-- Containerized execution (Docker)
-- Cloud-deployable architecture (GCP-ready)
-- Workflow orchestration using Nextflow (demo)
-
----
-
-## Architecture
+Key Capabilities
+End-to-end data pipeline:
+ingestion → cleaning → integration → feature engineering
+Modular and reusable pipeline components
+AI/ML-ready structured data output
+Containerized execution (Docker)
+Cloud-deployable architecture (GCP-ready)
+Workflow orchestration using Nextflow (demo)
+Architecture
 
 The pipeline is designed as a modular system:
 
-Raw Data  
-→ Data Ingestion  
-→ Data Cleaning & Normalization  
-→ Multi-Omics Integration (simulated)  
-→ Feature Engineering  
-→ AI-Ready Dataset Output  
+Raw Data
+→ Data Ingestion
+→ Data Cleaning & Normalization
+→ Multi-Omics Integration (simulated)
+→ Feature Engineering
+→ AI-Ready Dataset Output
 
-Each stage is implemented as an independent module to support scalability and reuse.
+Each stage is implemented as an independent module, enabling scalability, reusability, and maintainability.
 
----
+Technology Stack
+Python (data pipeline and processing)
+Docker (containerized execution)
+Nextflow (workflow orchestration demo)
+Cloud-ready architecture (adaptable to GCP / Kubernetes)
+Repository Structure
+ai-multiomics-data-platform-demo/
+│
+├── README.md
+├── Dockerfile
+├── requirements.txt
+├── main.nf
+├── deploy_gcp.sh
+├── data/
+│   └── sample_data.csv
+├── output/
+│   └── .gitkeep
+└── pipeline/
+    ├── ingest.py
+    ├── process.py
+    ├── integrate.py
+    ├── feature_engineering.py
+    └── run_pipeline.py
+How to Run
 
-## Technology Stack
+This project supports multiple execution modes to simulate real-world data platform usage.
 
-- Python (data pipeline and processing)
-- Docker (containerized execution)
-- Nextflow (workflow orchestration demo)
-- Cloud-ready architecture (adaptable to GCP / Kubernetes)
+1. Local Execution
 
----
+Run the pipeline directly in a Python environment:
 
-## Cloud Deployment (GCP-ready)
-
-This pipeline is designed to be portable and cloud-deployable.
-
-Typical deployment pattern on Google Cloud Platform (GCP):
-
-- Cloud Storage (GCS) for data input/output
-- Cloud Run for container execution
-- GKE for scalable orchestration
-- Event-driven or scheduled pipeline execution
-
----
-
-## Workflow Orchestration (Nextflow)
-
-A simplified Nextflow workflow (`main.nf`) is included to demonstrate:
-
-- Modular pipeline orchestration
-- Dependency management between processing steps
-- Reproducible execution across environments
-
----
-
-## Design Philosophy
-
-This project focuses on:
-
-- Reducing manual data processing (“data mechanics”)
-- Enabling AI-ready structured data
-- Building scalable and reusable pipelines
-- Supporting cloud-native execution
-- Bridging bioinformatics workflows with modern data platforms
-
----
-
-## Use Case
-
-This demo simulates how large-scale biological data (e.g., genomics, multi-omics) can be transformed into structured datasets suitable for:
-
-- Predictive modeling
-- AI/ML pipelines
-- Data-driven decision systems
-
----
-
-## How to Run
-
-### Local
-```bash
 pip install -r requirements.txt
 python pipeline/run_pipeline.py
 
-## Author
+This mode is useful for development and quick testing.
+
+2. Docker Execution (Recommended)
+
+Run the pipeline in a containerized environment for reproducibility:
+
+docker build -t ai-multiomics-demo .
+docker run --rm ai-multiomics-demo
+
+This ensures consistent execution across different environments and avoids dependency issues.
+
+3. Cloud Deployment (Conceptual – GCP-ready)
+
+This pipeline is designed to be deployable on Google Cloud Platform (GCP).
+
+Typical workflow:
+
+Upload input data to Cloud Storage (GCS)
+Build and push Docker image to container registry
+Execute pipeline via Cloud Run or GKE
+Store results back to Cloud Storage
+
+This enables scalable, event-driven processing for large datasets.
+
+4. Workflow Orchestration (Nextflow)
+
+A simplified Nextflow workflow (main.nf) is included:
+
+nextflow run main.nf
+
+Nextflow enables:
+
+Modular pipeline orchestration
+Dependency management
+Reproducible execution across environments
+Design Philosophy
+
+This project focuses on:
+
+Reducing manual data processing (“data mechanics”)
+Enabling AI-ready structured data
+Building scalable and reusable pipelines
+Supporting cloud-native execution
+Bridging bioinformatics workflows with modern data platforms
+Use Case
+
+This demo simulates how large-scale biological data (e.g., genomics, multi-omics) can be transformed into structured datasets for:
+
+Predictive modeling
+AI/ML pipelines
+Data-driven decision systems
+Key Takeaways
+Data pipelines should be modular, automated, and scalable
+Structured data is critical for AI and machine learning
+Workflow orchestration improves reproducibility and maintainability
+Cloud-native design enables scalability and production readiness
+Author
 
 Jianjiao Chen
