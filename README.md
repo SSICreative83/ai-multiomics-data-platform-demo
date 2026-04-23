@@ -43,6 +43,7 @@ Each stage is implemented as an independent module, enabling scalability, reusab
 ---
 
 ## Repository Structure
+
 ```mermaid
 graph TD
     A["ai-multiomics-data-platform-demo"] --> B["README.md"]
@@ -62,8 +63,8 @@ graph TD
     I --> I3["integrate.py"]
     I --> I4["feature_engineering.py"]
     I --> I5["run_pipeline.py"]
---- ;
 
+--- 
 ## How to Run
 
 This project supports multiple execution modes to simulate real-world data platform usage.
