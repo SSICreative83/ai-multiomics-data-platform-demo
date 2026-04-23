@@ -45,24 +45,25 @@ Each stage is implemented as an independent module, enabling scalability, reusab
 ---
 
 ## Repository Structure
-ai-multiomics-data-platform-demo/
-│
-├── README.md
-├── Dockerfile
-├── requirements.txt
-├── main.nf
-├── deploy_gcp.sh
-├── data/
-│ └── sample_data.csv
-├── output/
-│ └── .gitkeep
-└── pipeline/
-├── ingest.py
-├── process.py
-├── integrate.py
-├── feature_engineering.py
-└── run_pipeline.py
+```mermaid
+graph TD
+    A[ai-multiomics-data-platform-demo] --> B[README.md]
+    A --> C[Dockerfile]
+    A --> D[requirements.txt]
+    A --> E[main.nf]
+    A --> F[deploy_gcp.sh]
+    A --> G[data/]
+    A --> H[output/]
+    A --> I[pipeline/]
 
+    G --> G1[sample_data.csv]
+    H --> H1[.gitkeep]
+
+    I --> I1[ingest.py]
+    I --> I2[process.py]
+    I --> I3[integrate.py]
+    I --> I4[feature_engineering.py]
+    I --> I5[run_pipeline.py]
 ---
 
 ## How to Run
