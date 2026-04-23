@@ -78,7 +78,7 @@ python pipeline/run_pipeline.py
 
 This mode is useful for development and quick testing.
 
-2. Docker Execution (Recommended)
+### 2. Docker Execution (Recommended)
 
 Run the pipeline in a containerized environment for reproducibility:
 
@@ -87,7 +87,7 @@ docker run --rm ai-multiomics-demo
 
 This ensures consistent execution across different environments and avoids dependency issues.
 
-3. Cloud Deployment (Conceptual – GCP-ready)
+### 3. Cloud Deployment (Conceptual – GCP-ready)
 
 This pipeline is designed to be deployable on Google Cloud Platform (GCP).
 
@@ -100,7 +100,7 @@ Store results back to Cloud Storage
 
 This enables scalable, event-driven processing for large datasets.
 
-4. Workflow Orchestration (Nextflow)
+### 4. Workflow Orchestration (Nextflow)
 
 A simplified Nextflow workflow (main.nf) is included:
 
