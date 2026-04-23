@@ -130,7 +130,7 @@ Predictive modeling
 AI/ML pipelines
 Data-driven decision systems
 
-```plaintext
+```text
 Key Takeaways
 Data pipelines should be modular, automated, and scalable
 Structured data is critical for AI and machine learning
