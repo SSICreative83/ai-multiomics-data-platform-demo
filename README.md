@@ -17,7 +17,6 @@ It simulates how real-world life sciences data platforms reduce “data mechanic
 - Containerized execution (Docker)  
 - Cloud-deployable architecture (GCP-ready)  
 - Workflow orchestration using Nextflow (demo)  
-
 ---
 
 ## Architecture
