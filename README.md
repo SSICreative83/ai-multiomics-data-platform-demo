@@ -75,6 +75,7 @@ Run the pipeline directly in a Python environment:
 ```bash
 pip install -r requirements.txt
 python pipeline/run_pipeline.py
+```
 
 This mode is useful for development and quick testing.
 
