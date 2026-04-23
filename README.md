@@ -1,37 +1,50 @@
-AI-Ready Multi-Omics Data Platform Demo
-Overview
+# AI-Ready Multi-Omics Data Platform Demo
+
+## Overview
 
 This project demonstrates a simplified, modular data platform for processing multi-omics data and transforming it into structured, AI-ready datasets.
 
 It simulates how real-world life sciences data platforms reduce “data mechanics” and enable scalable, reproducible workflows for downstream AI/ML applications.
 
-Key Capabilities
-End-to-end data pipeline:
-ingestion → cleaning → integration → feature engineering
-Modular and reusable pipeline components
-AI/ML-ready structured data output
-Containerized execution (Docker)
-Cloud-deployable architecture (GCP-ready)
-Workflow orchestration using Nextflow (demo)
-Architecture
+---
+
+## Key Capabilities
+
+- End-to-end data pipeline:  
+  ingestion → cleaning → integration → feature engineering  
+- Modular and reusable pipeline components  
+- AI/ML-ready structured data output  
+- Containerized execution (Docker)  
+- Cloud-deployable architecture (GCP-ready)  
+- Workflow orchestration using Nextflow (demo)  
+
+---
+
+## Architecture
 
 The pipeline is designed as a modular system:
 
-Raw Data
-→ Data Ingestion
-→ Data Cleaning & Normalization
-→ Multi-Omics Integration (simulated)
-→ Feature Engineering
-→ AI-Ready Dataset Output
+Raw Data  
+→ Data Ingestion  
+→ Data Cleaning & Normalization  
+→ Multi-Omics Integration (simulated)  
+→ Feature Engineering  
+→ AI-Ready Dataset Output  
 
 Each stage is implemented as an independent module, enabling scalability, reusability, and maintainability.
 
-Technology Stack
-Python (data pipeline and processing)
-Docker (containerized execution)
-Nextflow (workflow orchestration demo)
-Cloud-ready architecture (adaptable to GCP / Kubernetes)
-Repository Structure
+---
+
+## Technology Stack
+
+- Python (data pipeline and processing)  
+- Docker (containerized execution)  
+- Nextflow (workflow orchestration demo)  
+- Cloud-ready architecture (adaptable to GCP / Kubernetes)  
+
+---
+
+## Repository Structure
 ai-multiomics-data-platform-demo/
 │
 ├── README.md
@@ -40,23 +53,27 @@ ai-multiomics-data-platform-demo/
 ├── main.nf
 ├── deploy_gcp.sh
 ├── data/
-│   └── sample_data.csv
+│ └── sample_data.csv
 ├── output/
-│   └── .gitkeep
+│ └── .gitkeep
 └── pipeline/
-    ├── ingest.py
-    ├── process.py
-    ├── integrate.py
-    ├── feature_engineering.py
-    └── run_pipeline.py
-How to Run
+├── ingest.py
+├── process.py
+├── integrate.py
+├── feature_engineering.py
+└── run_pipeline.py
+
+---
+
+## How to Run
 
 This project supports multiple execution modes to simulate real-world data platform usage.
 
-1. Local Execution
+### 1. Local Execution
 
 Run the pipeline directly in a Python environment:
 
+```bash
 pip install -r requirements.txt
 python pipeline/run_pipeline.py
 
@@ -95,6 +112,7 @@ Nextflow enables:
 Modular pipeline orchestration
 Dependency management
 Reproducible execution across environments
+
 Design Philosophy
 
 This project focuses on:
@@ -104,6 +122,7 @@ Enabling AI-ready structured data
 Building scalable and reusable pipelines
 Supporting cloud-native execution
 Bridging bioinformatics workflows with modern data platforms
+
 Use Case
 
 This demo simulates how large-scale biological data (e.g., genomics, multi-omics) can be transformed into structured datasets for:
@@ -111,11 +130,13 @@ This demo simulates how large-scale biological data (e.g., genomics, multi-omics
 Predictive modeling
 AI/ML pipelines
 Data-driven decision systems
+
 Key Takeaways
 Data pipelines should be modular, automated, and scalable
 Structured data is critical for AI and machine learning
 Workflow orchestration improves reproducibility and maintainability
 Cloud-native design enables scalability and production readiness
+
 Author
 
 Jianjiao Chen
