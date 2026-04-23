@@ -130,12 +130,12 @@ Predictive modeling
 AI/ML pipelines
 Data-driven decision systems
 
-Key Takeaways
+## Key Takeaways
 
-Data pipelines should be modular, automated, and scalable
-Structured data is critical for AI and machine learning
-Workflow orchestration improves reproducibility and maintainability
-Cloud-native design enables scalability and production readiness
+- Data pipelines should be modular, automated, and scalable  
+- Structured data is critical for AI and machine learning  
+- Workflow orchestration improves reproducibility and maintainability  
+- Cloud-native design enables scalability and production readiness 
 
 Author
 
