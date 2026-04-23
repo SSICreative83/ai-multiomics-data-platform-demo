@@ -112,7 +112,8 @@ Modular pipeline orchestration
 Dependency management
 Reproducible execution across environments
 
-Design Philosophy
+--- 
+## Design Philosophy
 
 This project focuses on:
 
@@ -122,7 +123,8 @@ Building scalable and reusable pipelines
 Supporting cloud-native execution
 Bridging bioinformatics workflows with modern data platforms
 
-Use Case
+--- 
+## Use Case
 
 This demo simulates how large-scale biological data (e.g., genomics, multi-omics) can be transformed into structured datasets for:
 
@@ -130,12 +132,13 @@ Predictive modeling
 AI/ML pipelines
 Data-driven decision systems
 
+--- 
 ## Key Takeaways
 
-- Data pipelines should be modular, automated, and scalable  
-- Structured data is critical for AI and machine learning  
-- Workflow orchestration improves reproducibility and maintainability  
-- Cloud-native design enables scalability and production readiness 
+Data pipelines should be modular, automated, and scalable
+Structured data is critical for AI and machine learning
+Workflow orchestration improves reproducibility and maintainability
+Cloud-native design enables scalability and production readiness
 
 Author
 
